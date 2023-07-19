@@ -1,5 +1,5 @@
-#include "pch.h"
-#include "NepWinHelper.Injector.h"
+#include "..\inc\pch.h"
+#include "..\inc\NepWinHelper.Injector.h"
 
 inline void *copy_memory_to_process(const HANDLE hProcess, const TCHAR *pSrc, const SIZE_T SizeOfByte)
 {

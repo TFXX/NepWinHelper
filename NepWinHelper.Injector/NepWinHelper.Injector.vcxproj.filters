@@ -15,20 +15,20 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="NepWinHelper.Injector.h">
+    <ClInclude Include="inc\NepWinHelper.Injector.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="pch.h">
+    <ClInclude Include="inc\pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="NepWinHelper.Injector.c">
+    <None Include="src\NepWinHelper.Injector.c">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pch.c">
+    <ClCompile Include="src\pch.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
