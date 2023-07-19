@@ -143,13 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="inc\NepWinHelper.Injector.h" />
+    <ClInclude Include="inc\injector.h" />
     <ClInclude Include="inc\pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\NepWinHelper.Injector.c" />
-  </ItemGroup>
-  <ItemGroup>
+    <ClCompile Include="src\injector.c" />
+    <ClCompile Include="src\apc_inject.c" />
     <ClCompile Include="src\pch.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
     </ClCompile>

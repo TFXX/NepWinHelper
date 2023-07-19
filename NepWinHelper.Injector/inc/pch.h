@@ -9,3 +9,4 @@
 #include <Fileapi.h>
 #include <memoryapi.h>
 #include <libloaderapi.h>
+#include <tlhelp32.h>
