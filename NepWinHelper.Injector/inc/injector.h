@@ -8,11 +8,11 @@
 #define LOAD_LIBRARY_NAME "LoadLibraryA"
 #endif
 
-typedef struct 
+typedef struct _tagTHREAD_ID_ARRAY
 {
 	DWORD *pArray;
 	size_t length;
-} THREAD_ID_ARRAY;
+} _THREAD_ID_ARRAY;
 
 /**
 	@brief 通过CreateRemoteThread方法注入Dll
@@ -42,5 +42,6 @@ void *_copy_memory_to_process(const HANDLE hProcess, const TCHAR *pSrc, const SI
 
 FARPROC _get_func_from_module(const TCHAR *szModuleName, const char *szFuncName);
 
-THREAD_ID_ARRAY *_enum_thread_from_process(const DWORD dwProcessID);
-void _delete_thread_id_array(THREAD_ID_ARRAY *pThreadIDs);
+_THREAD_ID_ARRAY *_enum_thread_from_process(const DWORD dwProcessID);
+
+void _delete_thread_id_array(_THREAD_ID_ARRAY*pThreadIDs);
